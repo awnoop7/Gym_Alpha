@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    height: 100%;
+    width: 100%;
+    background-color: #181a1b;
+    scroll-behavior: smooth;
+}
+
+#f_container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 8%;
+}
+
+#f_container h1{
+    font-size: 7vw;
+    font-weight: 800;
+    line-height: 7vw;
+    color: white;
+}
+
+#f_container p{
+    text-align: center;
+    font-weight: 410;
+    margin-top: 3vh;
+    color: white;
+    font-size: 1.8rem;
+}
+#btn{
+    text-transform: uppercase;
+    height: 6vh;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 30px;
+    background: #0af770;
+    cursor: pointer;
+}
+
+#btn:hover{
+    background-color: #2e7e52;
+    animation: bounch 0.5s ease;
+    transform: scale(1.1);
+}
+
+video{
+    margin-top: 4vw;
+    border-radius: 40px;
+    width: 100%;
+    height: 100%;
+    padding: 30px;
+}
+
+
+
+
+
+
+@keyframes bounce {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.9s);
+    }
+}
