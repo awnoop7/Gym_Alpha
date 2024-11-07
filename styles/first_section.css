@@ -12,7 +12,7 @@ html, body{
 }
 
 #f_container {
-    height: 100vh;
+    max-height: 120vh;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -29,9 +29,10 @@ html, body{
 }
 
 #f_container p{
+    padding:  0 150px 0 150px;
     text-align: center;
     font-weight: 410;
-    margin-top: 3vh;
+    margin-top: 4vh;
     color: white;
     font-size: 1.8rem;
 }
@@ -50,12 +51,17 @@ html, body{
     animation: bounch 0.5s ease;
     transform: scale(1.1);
 }
+/* .video_container{
+    height: 80vh;
+    width: 100%;
+   
+} */
 
 video{
     margin-top: 4vw;
-    border-radius: 40px;
-    width: 100%;
-    height: 100%;
+    border-radius: 85px;
+    width: 100vw;
+    height: 80vh;
     padding: 30px;
 }
 
@@ -70,5 +76,46 @@ video{
     }
     50% {
         transform: scale(1.9s);
+    }
+}
+
+
+/* General styles for 600px and below */
+@media (max-width: 600px) {
+  
+    #f_container h1 {
+        font-size: 9vw; 
+        line-height: 12vw;
+    }
+
+    #f_container p {
+        padding: 15px;
+        font-size: 6vw;
+        margin: 1vh 10px; 
+    }
+
+    #btn{
+        height: 6vh;
+        margin-top: 0px;
+    }
+
+   
+    video {
+        width: 90vw; /* Slightly smaller width */
+        height: 50vh;
+        padding: 15px;
+        border-radius: 15px;
+    }
+
+    /* Adjust container padding */
+    #f_container {
+        /* margin-top: 30%; */
+        padding: 0 10px;
+    }
+
+    /* Additional sections */
+    #program_section, #Membership_section, #last_section {
+        padding: 10px;
+        text-align: center;
     }
 }

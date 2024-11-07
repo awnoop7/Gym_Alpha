@@ -1,0 +1,78 @@
+/* Styling for the last section */
+.last-section {
+    padding: 50px 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+  }
+  
+  /* Content section within the last section */
+  .last-section-content {
+    margin-bottom: 40px;
+  }
+  
+  .last-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .last-section p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .cta-button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .cta-button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Contact info section */
+  .contact-info {
+    margin-bottom: 30px;
+  }
+  
+  .contact-info h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+  }
+  
+  .contact-info p {
+    font-size: 1rem;
+    margin: 5px 0;
+  }
+  
+  /* Social media links */
+  .social-media a {
+    margin: 0 15px;
+    font-size: 1.1rem;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s;
+  }
+  
+  .social-media a:hover {
+    color: #007bff;
+  }
+  
+  /* Responsive design */
+  @media (max-width: 768px) {
+    .last-section {
+      padding: 40px 15px;
+    }
+  
+    .social-media a {
+      font-size: 1rem;
+      margin: 0 10px;
+    }
+  }
+  

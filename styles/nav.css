@@ -1,59 +1,92 @@
+/* General Styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html, body{
-    height: 100%;
-    width: 100%;
+html, body {
+  height: 100%;
+  width: 100%;
 }
 
-#top{
-     height: 9vh;
-    width: 100%;
-     position: relative;
-} 
-
-#nav{
-    background-color: #111111;
-    height: 100px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2vw 6vw;
-    position: fixed;
-    border: 1px solid gray;
+/* Navbar Styles */
+#nav {
+  background-color: #111111;
+  height: 9vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 6vw;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
 }
 
-#nav h1{
-    font-size: 2.8rem;
-    color: #0af770;
+#nav h1 {
+  font-size: 3vw;
+  color: #0af770;
 }
 
-#r_nav{
-    display: flex;
-    gap: 1vw;
+#r_nav {
+  display: flex;
+  gap: 1vw;
 }
 
-#r_nav a{
-    color: white;
-    text-decoration: none;
-    font-size: 1.8rem;
-    padding: 10px 20px;
-    border: 1px solid gray;
-    border-radius: 50px;
-    position: relative;
-    font-weight: 200;
+#r_nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.8rem;
+  padding: 10px 20px;
+  border: 1px solid gray;
+  border-radius: 50px;
+  font-weight: 200;
 }
-
 
 #r_nav a:hover {
-    background-color: #95a79d; 
-    color: #0af770; 
-    border-color: rgb(173, 173, 173);  
-    transition: all 0.3s ease; 
+  background-color: #95a79d; 
+  color: #0af770; 
+  border-color: rgb(173, 173, 173);  
+  transition: all 0.3s ease;
 }
 
+.ri-menu-fold-4-line {
+  display: none;
+  font-size: 2rem;
+  color: white;
+  cursor: pointer;
+}
+
+
+
+
+/* Mobile View - 600px or less */
+@media (max-width: 600px) {
+
+  #nav h1 {
+    font-size: 8vw;
+    color: #0af770;
+  }
+
+
+  #r_nav a {
+      display: none;
+      width: 100%;
+      padding: 15px;
+      border-radius: 0;
+      border: none;
+      text-align: center;
+  }
+
+  .ri-menu-fold-4-line {
+      display: block;
+  }
+
+  #r_nav.active a {
+      display: block;
+      background-color: #333;
+      color: #fff;
+      border: none;
+  }
+}
