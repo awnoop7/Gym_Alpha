@@ -1,78 +1,203 @@
-/* Styling for the last section */
-.last-section {
-    padding: 50px 20px;
-    background-color: #333;
-    color: white;
+#last_section {
+  padding: 40px;
+  background-color: #f0f0f0;
+}
+
+#last_main {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 160px;
+  max-width: 1330px;
+}
+
+.about_us, .feedback {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.about_us h1, .feedback h1 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.about_us p, .feedback p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.feedback_contain {
+  margin-top: 20px;
+}
+
+.feedback_main {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.feedback_main input,
+.feedback_main textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.feedback_main textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+.l_btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.l_btn:hover {
+  background-color: #0056b3;
+} 
+
+footer {
+  margin-top: 30px;
+  background-color: #333;
+  color: #fff;
+  padding: 40px 20px;
+  font-family: 'Arial', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-section {
+  flex: 1;
+}
+
+.footer-section h3 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+  color: #007bff;
+}
+
+.footer-section-social {
+  flex: 1;
+}
+
+.footer-section-social h3 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.footer-section-social a {
+  display: block;
+  color: #fff;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer-section-social a:hover {
+  color: #007bff;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+
+/* Responsive Design for 600px and Below */
+@media (max-width: 600px) {
+  #last_main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .about_us,
+  .feedback {
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 15px;
+  }
+
+  .about_us h1,
+  .feedback h1 {
+    font-size: 1.5rem;
+  }
+
+  .feedback_main input,
+  .feedback_main textarea {
+    font-size: 0.9rem;
+  }
+
+  .l_btn {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .footer-section,
+  .footer-section-social {
+    width: 100%;
     text-align: center;
   }
-  
-  /* Content section within the last section */
-  .last-section-content {
-    margin-bottom: 40px;
-  }
-  
-  .last-section h2 {
-    font-size: 2.5rem;
-    margin-bottom: 15px;
-  }
-  
-  .last-section p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-  }
-  
-  .cta-button {
-    background-color: #007bff;
-    color: white;
-    padding: 12px 30px;
-    border: none;
-    border-radius: 5px;
+
+  .footer-section h3,
+  .footer-section-social h3 {
     font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.3s;
   }
-  
-  .cta-button:hover {
-    background-color: #0056b3;
+
+  .footer-section ul li a {
+    font-size: 0.9rem;
   }
-  
-  /* Contact info section */
-  .contact-info {
-    margin-bottom: 30px;
+
+  .footer-bottom {
+    font-size: 0.8rem;
   }
-  
-  .contact-info h3 {
-    font-size: 1.8rem;
-    margin-bottom: 10px;
-  }
-  
-  .contact-info p {
-    font-size: 1rem;
-    margin: 5px 0;
-  }
-  
-  /* Social media links */
-  .social-media a {
-    margin: 0 15px;
-    font-size: 1.1rem;
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s;
-  }
-  
-  .social-media a:hover {
-    color: #007bff;
-  }
-  
-  /* Responsive design */
-  @media (max-width: 768px) {
-    .last-section {
-      padding: 40px 15px;
-    }
-  
-    .social-media a {
-      font-size: 1rem;
-      margin: 0 10px;
-    }
-  }
-  
+}
