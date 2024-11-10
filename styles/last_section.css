@@ -1,98 +1,106 @@
+
 #last_section {
-  padding: 40px;
-  background-color: #f0f0f0;
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f4f4; 
 }
 
+
 #last_main {
+  width: 80%;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 160px;
-  max-width: 1330px;
 }
 
-.about_us, .feedback {
-  flex: 1;
-  padding: 20px;
-  background-color: #fff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+.about_us {
+  width: 48%;
 }
 
-.about_us h1, .feedback h1 {
-  font-size: 2rem;
-  margin-bottom: 15px;
+.about_us h1 {
+  font-size: 24px;
   color: #333;
+  margin-bottom: 10px;
 }
 
-.about_us p, .feedback p {
-  font-size: 1rem;
-  color: #555;
-  line-height: 1.6;
+.about_us p {
+  font-size: 16px;
+  color: #666;
+  line-height: 1.5;
+}
+
+
+.feedback {
+  width: 48%;
+}
+
+.feedback h1 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
 }
 
 .feedback_contain {
-  margin-top: 20px;
-}
-
-.feedback_main {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 10px;
 }
 
 .feedback_main input,
 .feedback_main textarea {
   width: 100%;
   padding: 10px;
-  font-size: 1rem;
+  margin: 5px 0;
+  font-size: 16px;
   border: 1px solid #ccc;
   border-radius: 5px;
 }
 
-.feedback_main textarea {
-  resize: vertical;
-  height: 100px;
-}
-
-.l_btn {
+.feedback_main button {
   padding: 10px 20px;
-  font-size: 1rem;
-  color: #fff;
+  font-size: 16px;
   background-color: #007bff;
+  color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 
-.l_btn:hover {
-  background-color: #0056b3;
-} 
+.feedback_main button:hover {
+  background-color:#0056b3;
+}
+
 
 footer {
-  margin-top: 30px;
   background-color: #333;
   color: #fff;
   padding: 40px 20px;
-  font-family: 'Arial', sans-serif;
+  font-family: Arial, sans-serif;
 }
+
 
 .footer-container {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  align-items: flex-start;
   max-width: 1200px;
   margin: 0 auto;
 }
 
+
 .footer-section {
-  flex: 1;
+  width: 30%;
+  padding: 10px;
 }
 
 .footer-section h3 {
-  font-size: 1.2rem;
-  margin-bottom: 15px;
+  font-size: 22px;
+  margin-bottom: 10px;
   color: #fff;
 }
 
@@ -102,102 +110,95 @@ footer {
 }
 
 .footer-section ul li {
-  margin-bottom: 10px;
+  margin: 8px 0;
 }
 
 .footer-section ul li a {
   color: #fff;
   text-decoration: none;
-  font-size: 1rem;
-  transition: color 0.3s;
+  font-size: 16px;
+  transition: color 0.3s ease;
 }
 
 .footer-section ul li a:hover {
-  color: #007bff;
+  color: #ff6f61;
 }
 
-.footer-section-social {
-  flex: 1;
-}
-
-.footer-section-social h3 {
-  font-size: 1.2rem;
-  margin-bottom: 15px;
-  color: #fff;
-}
 
 .footer-section-social a {
   display: block;
+  margin: 5px 0;
   color: #fff;
-  font-size: 1rem;
-  margin-bottom: 10px;
   text-decoration: none;
-  transition: color 0.3s;
+  font-size: 16px;
 }
 
 .footer-section-social a:hover {
-  color: #007bff;
+  color: #ff6f61;
 }
+
 
 .footer-bottom {
   text-align: center;
   margin-top: 40px;
-  font-size: 0.9rem;
-  color: #ccc;
+  font-size: 14px;
+  color: #aaa;
 }
 
 
-/* Responsive Design for 600px and Below */
-@media (max-width: 600px) {
+
+
+
+@media screen and (max-width: 600px) {
+  #last_section {
+    height: auto; 
+    background-color: #f8f4f4; 
+    padding: 0 30px 0 30px
+
+  }
+
   #last_main {
     flex-direction: column;
     align-items: center;
+    width: 100%;  
   }
 
   .about_us,
   .feedback {
-    width: 100%;
+    width: 100%; 
     margin-bottom: 20px;
-    padding: 15px;
   }
 
   .about_us h1,
   .feedback h1 {
-    font-size: 1.5rem;
+    font-size: 20px; 
   }
 
-  .feedback_main input,
-  .feedback_main textarea {
-    font-size: 0.9rem;
-  }
-
-  .l_btn {
-    font-size: 0.9rem;
-    padding: 8px 16px;
+  .about_us p {
+    font-size: 14px; 
   }
 
   .footer-container {
     flex-direction: column;
     align-items: center;
-    gap: 30px;
   }
 
-  .footer-section,
-  .footer-section-social {
+  .footer-section {
     width: 100%;
-    text-align: center;
+    margin-bottom: 20px;
   }
 
-  .footer-section h3,
-  .footer-section-social h3 {
-    font-size: 1rem;
+  .footer-section h3 {
+    font-size: 18px;
   }
 
   .footer-section ul li a {
-    font-size: 0.9rem;
+    font-size: 14px;
   }
 
   .footer-bottom {
-    font-size: 0.8rem;
+    font-size: 12px;
+    margin-top: 20px;
   }
 }
+

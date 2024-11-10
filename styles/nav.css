@@ -9,7 +9,7 @@ html, body {
   width: 100%;
 }
 
-/* Navbar Styles */
+
 #nav {
   height: 9vh;
   width: 100%;
@@ -32,6 +32,7 @@ html, body {
 #r_nav {
   display: flex;
   gap: 1vw;
+  align-items: center;
 }
 
 #r_nav a {
@@ -56,12 +57,14 @@ html, body {
   font-size: 2rem;
   color: white;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
 
 
 
 
-/* Mobile View - 600px or less */
+
+
 @media (max-width: 600px) {
 
 
@@ -90,11 +93,15 @@ html, body {
   }
 
   #r_nav.active a {
-      display: block;
+      display: block;  
       background-color: #333;
       color: #fff;
       
   }
+  .ri-menu-fold-4-line {
+    display: block;
+  }
+
 
   
 }
