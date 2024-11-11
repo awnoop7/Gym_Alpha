@@ -98,10 +98,10 @@ html, body {
       color: #fff;
       
   }
-  .ri-menu-fold-4-line {
-    display: block;
+  #r_nav.active a {
+    opacity: 1;
+    pointer-events: auto;
   }
-
-
+ 
   
 }

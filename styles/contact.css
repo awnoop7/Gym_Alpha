@@ -1,0 +1,126 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+
+#contact-us {
+    margin-top: 60px;
+    position: relative;
+    padding: 60px 20px;
+    background: url('/img/24_hour.webp') center/cover no-repeat;
+    color: #fff;
+}
+
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.contact-container h2 {
+    font-size: 2.5em;
+    color: #ffeb3b;
+    margin-bottom: 20px;
+}
+
+.contact-container p {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+.contact-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+
+.contact-form {
+    flex: 1 1 300px;
+    max-width: 500px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    background: #fff;
+    color: #333;
+    font-size: 1em;
+}
+
+.contact-form button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background: #ffeb3b;
+    color: #333;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+    background: #967207;
+}
+
+.contact-details {
+    flex: 1 1 300px;
+    max-width: 400px;
+    text-align: left;
+    color: #fff;
+}
+
+.contact-details h3 {
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.contact-details p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+
+
+@media (max-width: 600px) {
+    .contact-container {
+        padding: 20px;
+    }
+
+    .contact-container h2 {
+        font-size: 1.8em;
+    }
+
+    .contact-form input,
+    .contact-form textarea {
+        padding: 10px;
+    }
+
+    .contact-form button {
+        padding: 10px;
+        font-size: 1em;
+    }
+
+    .contact-details h3 {
+        font-size: 1.5em;
+    }
+}

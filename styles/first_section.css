@@ -18,7 +18,8 @@ html, body{
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 20%;
+    margin-top: 10%;
+    background-color: #181a1b;
 }
 
 #f_container h1{
