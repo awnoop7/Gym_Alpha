@@ -71,6 +71,7 @@ html {
 
 .s_btn:hover {
     background-color: #0056b3;
+    transform: translateY(-7px);
 }
 
 

@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 #programs {
     padding: 50px 0;
     background-color: #f4f4f4;
@@ -75,6 +79,7 @@ p {
 
 .btn:hover {
     background-color: #e3862a;
+    transform: translateY(-7px);
 }
 
 @media (max-width: 768px) {

@@ -10,6 +10,9 @@ body {
     background-color: #f7f7f7;
     color: #333;
 }
+html {
+    scroll-behavior: smooth;
+}
 
 
 #contact-us {
@@ -80,6 +83,7 @@ body {
 
 .contact-form button:hover {
     background: #967207;
+    transform: translateY(-7px);
 }
 
 .contact-details {

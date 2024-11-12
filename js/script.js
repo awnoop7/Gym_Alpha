@@ -3,23 +3,15 @@ document.getElementById("btn").addEventListener("click",function(){
 })
 
 
-// navbar function
-document.getElementById('hamburger-btn').addEventListener('click', function() {
-    const navLinks = document.getElementById('r_nav');
-    // Toggle the 'active' class to open and close the navigation menu
-    navLinks.classList.toggle('active');
+
+// JavaScript for Toggle Sidebar
+const menuToggle = document.getElementById('menu-toggle');
+const rNav = document.getElementById('r_nav');
+
+menuToggle.addEventListener('click', () => {
+    rNav.classList.toggle('active');
 });
 
 
 
 
-
-
-
-// contact_us
-
-document.getElementById('contactForm').addEventListener('submit', function (event) {
-    event.preventDefault();
-    alert('Thank you for reaching out! We will get back to you soon.');
-    this.reset();
-});

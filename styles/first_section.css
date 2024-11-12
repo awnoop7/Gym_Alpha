@@ -51,6 +51,7 @@ html, body{
     background-color: #2e7e52;
     animation: bounch 0.5s ease;
     transform: scale(1.1);
+    transform: translateY(-7px);
 }
 
 
