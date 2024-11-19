@@ -17,7 +17,10 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: #17678f;
+    background-image: url("/img/pexels-yaroslav-shuraev-8478698.jpg")  !important;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 
@@ -33,7 +36,7 @@
 #p_left h1{
     font-size: 2.8vw;
     font-weight: 600;
-    color: black;
+    color: white;
     margin-top: 20px;
 }
 #p_left p{
@@ -70,7 +73,7 @@
 #p_right h3{
     margin-top: 60px;
     font-size: 1.8vw;
-    color: rgb(162, 196, 99);
+    color: #0af770;
 
 }
 
@@ -110,7 +113,7 @@
 
     #p_left h1 {
         font-size: 9vw; 
-        color: black;
+        color: white;
     }
 
     #p_left p {
