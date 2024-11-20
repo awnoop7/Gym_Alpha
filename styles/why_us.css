@@ -45,7 +45,7 @@ html, body {
   margin-bottom: 30px;
   color: #ffeb3b;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
-  animation: slideIn 1s ease-out forwards;
+ 
 
 }
 
@@ -162,4 +162,11 @@ html, body {
   }
 
   
+}
+
+
+@media (max-width: 360px) {
+  .feature p {
+      font-size: 0.8em;
+  }
 }

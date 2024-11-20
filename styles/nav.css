@@ -26,8 +26,8 @@ html, body {
 }
 
 #nav h1 {
-  font-size: 3vw;
-  color: #0af770;
+  font-size: 2.5vw;
+  color: #0af771da;
   animation: fadeInLetter 1s ease forwards;
 }
 
@@ -40,7 +40,7 @@ html, body {
 #r_nav a {
   color: white;
   text-decoration: none;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   padding: 10px 20px;
   border: 1px solid gray;
   border-radius: 50px;

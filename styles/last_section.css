@@ -135,9 +135,15 @@ footer {
  
 }
 
+.footer-section-social h3{
+  font-size: 1.5rem;
+}
 
 .footer-section-social a {
   display: block;
+  align-items: center;
+  justify-content: center;
+  display: flex;
   margin: 5px 0;
   color: #fff;
   text-decoration: none;
@@ -247,6 +253,9 @@ footer {
 
   .footer-section ul li a {
     font-size: 14px;
+    
+    align-items: center;
+    /* display: flex; */
   }
 
   .footer-bottom {
