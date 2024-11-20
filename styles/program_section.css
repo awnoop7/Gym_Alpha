@@ -15,15 +15,17 @@ html {
 }
 
 h2 {
-    font-size: 36px;
+    font-size: 40px;
     margin-bottom: 20px;
     color: white;
+    animation: slideIn 1s ease-out forwards;
 }
 
 p {
     font-size: 18px;
     margin-bottom: 40px;
     color:white;
+    animation: fadeIn 3s ease-out forwards;
 }
 
 .programs {
@@ -58,12 +60,14 @@ h3 {
     font-size: 24px;
     margin-top: 20px;
     color:white;
+    animation: fadeIn 3s ease-out forwards;
 }
 
 p {
     font-size: 16px;
     color: white;
     margin: 10px 0;
+    animation: fadeIn 3s ease-out forwards;
 }
 
 .btn {
@@ -75,12 +79,55 @@ p {
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    animation: popup 0.8s ease-out forwards;
 }
 
 .btn:hover {
     background-color: #e3862a;
     transform: translateY(-7px);
 }
+
+/* slideIn h1 */
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* for p */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* for btn */
+@keyframes popup {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    60% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+
+
+
 
 @media (max-width: 768px) {
     h2 {

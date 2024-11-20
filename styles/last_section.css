@@ -28,12 +28,15 @@ html {
   font-size: 24px;
   color:white;
   margin-bottom: 10px;
+  animation: slideIn 1s ease-out forwards;
 }
 
 .about_us p {
   font-size: 16px;
   color:white;
   line-height: 1.5;
+  animation: fadeIn 3s ease-out forwards;
+
 }
 
 
@@ -45,6 +48,7 @@ html {
   font-size: 24px;
   color:white;
   margin-bottom: 10px;
+  animation: slideIn 1s ease-out forwards;
 }
 
 .feedback_contain {
@@ -72,6 +76,8 @@ html {
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s;
+  animation: popup 0.8s ease-out forwards;
+
 }
 
 .feedback_main button:hover {
@@ -148,7 +154,49 @@ footer {
   margin-top: 40px;
   font-size: 14px;
   color: #aaa;
+  animation: popup 0.8s ease-out forwards;
+
 }
+
+
+/* slideIn h1 */
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* for p */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* for btn */
+@keyframes popup {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    60% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
 
 
 

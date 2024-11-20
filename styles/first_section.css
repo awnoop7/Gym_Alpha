@@ -27,6 +27,7 @@ html, body{
     font-weight: 800;
     line-height: 7vw;
     color: white;
+    animation: slideIn 1.5s ease-out forwards;
 }
 
 #f_container p{
@@ -36,6 +37,7 @@ html, body{
     margin-top: 4vh;
     color: white;
     font-size: 1.8vw;
+    animation: fadeIn 3s ease-out forwards;
 }
 #btn{
     text-transform: uppercase;
@@ -45,6 +47,7 @@ html, body{
     margin-top: 30px;
     background: #0af770;
     cursor: pointer;
+    animation: popup 1.5s ease-out forwards;
 }
 
 #btn:hover{
@@ -65,6 +68,44 @@ video{
 }
 
 
+/* slideIn h1 */
+
+@keyframes slideIn {
+    0% {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* fadeIN  p*/
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* for btn */
+@keyframes popup {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    60% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+    }
+}
 
 
 
@@ -77,6 +118,8 @@ video{
         transform: scale(1.9s);
     }
 }
+
+
 
 
 

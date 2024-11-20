@@ -45,6 +45,8 @@ html, body {
   margin-bottom: 30px;
   color: #ffeb3b;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+  animation: slideIn 1s ease-out forwards;
+
 }
 
 .features {
@@ -70,12 +72,54 @@ html, body {
   font-size: 1.8em;
   margin-bottom: 15px;
   color: #ffeb3b;
+  animation: slideIn 1s ease-out forwards;
+
 }
 
 .feature p {
   font-size: 1em;
   color: #e0e0e0;
   line-height: 1.5;
+  animation: fadeIn 3s ease-out forwards;
+}
+
+
+/* slideIn h1 */
+
+@keyframes slideIn {
+  0% {
+      transform: translateY(-50px);
+      opacity: 0;
+  }
+  100% {
+      transform: translateY(0);
+      opacity: 1;
+  }
+}
+
+/* for p */
+@keyframes fadeIn {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+/* for btn */
+@keyframes popup {
+  0% {
+      transform: scale(0);
+      opacity: 0;
+  }
+  60% {
+      transform: scale(1.2);
+      opacity: 1;
+  }
+  100% {
+      transform: scale(1);
+  }
 }
 
 
